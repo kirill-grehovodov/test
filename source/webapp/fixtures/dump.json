@@ -1,0 +1,60 @@
+[
+{
+  "model": "webapp.article",
+  "pk": 1,
+  "fields": {
+    "title": "Title",
+    "text": "Some long informative text",
+    "author": "Name",
+    "created_at": "2020-07-20T10:40:05.644Z",
+    "updated_at": "2020-07-20T10:40:05.644Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 2,
+  "fields": {
+    "title": "Title 2",
+    "text": "Some long informative text 2",
+    "author": "Name 2",
+    "created_at": "2020-07-20T10:40:17.775Z",
+    "updated_at": "2020-07-20T10:40:17.775Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$mvDnB1lq4P8i$qnFgtLY3+SVS6a4grEczRMUqhmb/iBKcFGqacjBJDHQ=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "rikill",
+    "first_name": "",
+    "last_name": "",
+    "email": "rikill666@mail.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-07-20T10:46:56.583Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$B4XgYebjO7NO$JYMJf1ljCBQNj5xFEIeAqJsOS7DKa17F5NjQs7qnjTs=",
+    "last_login": "2020-07-20T10:49:22.305Z",
+    "is_superuser": true,
+    "username": "rik",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-07-20T10:49:05.428Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
