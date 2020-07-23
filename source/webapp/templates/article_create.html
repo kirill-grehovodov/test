@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Create</title>
-</head>
-<body>
-<h1>Create Article</h1>
-<p><a href="/">На главную</a></p>
-<form action="/articles/add/" method="post">
-    {% csrf_token %}
-    <label>Title:</label><br/>
-    <input type="text" name="title"/><br/>
-    <label>Text:</label><br/>
-    <textarea name="content"></textarea><br/>
-    <label>Author:</label><br/>
-    <input type="text" name="author"/><br/>
-    <br/>
-    <input type="submit" value="Send"/>
-</form>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Create Article{% endblock %}
+{% block content %}
+   <h1>Создание</h1>
+   <form method="POST" action="{% url "article_add" %}">
+       {% csrf_token %}
+       <p><label>Title</label> <input type="text" name="title"></p>
+       <p><label>Author</label> <input type="text" name="author"></p>
+       <p><label>Text</label> <textarea name="text"></textarea></p>
+       <p><input type="submit" value="Submit"></p>
+   </form>
+{% endblock %}

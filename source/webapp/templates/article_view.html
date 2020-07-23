@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>View</title>
-</head>
-<body>
-    <p><a href="/">На главную</a></p>
-    <h1>Article:</h1>
-    <h2>{{ article.title }}</h2>
-    <p>{{ article.text }}</p>
-    <p>By: {{ article.author }}</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}
+   <div class="container">
+       <h1>{{ article.title }}</h1>
+       <p>Created by <b>{{ article.author }}</b> </p>
+       <div>{{ article.text }}</div>
+   </div>
+{% endblock %}
