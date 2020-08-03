@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin-top: 60px;
 }
+
 .navbar {
     display: block;
     background: #6a7dff;
@@ -37,4 +38,15 @@ body {
 .menu a:hover {
     color: #ffc122;
     text-decoration: underline;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0 0 0
+}
+
+.field-error {
+    border: solid 1px red;
+    box-shadow: red 0 0 3px;
 }

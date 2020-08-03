@@ -4,9 +4,7 @@
    <h1>Создание</h1>
    <form method="POST" action="{% url "article_add" %}">
        {% csrf_token %}
-       <p><label>Title</label> <input type="text" name="title"></p>
-       <p><label>Author</label> <input type="text" name="author"></p>
-       <p><label>Text</label> <textarea name="text"></textarea></p>
-       <p><input type="submit" value="Submit"></p>
+       {% include 'partial/article_form.html' with button_text='Создать' %}
+
    </form>
 {% endblock %}
